@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Topic-wise Sheet | PrepPortal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .sheet-container {
+            margin-top: 100px;
+        }
+        .progress-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 12px;
+        }
+        .progress-bar-bg {
+            flex-grow: 1;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            margin: 0 20px;
+            overflow: hidden;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            background: var(--primary);
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+        .topic-section {
+            margin-bottom: 40px;
+        }
+        .topic-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .topic-title h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+        .problem-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .problem-table th, .problem-table td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .problem-table th {
+            color: var(--text-dim);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .status-checkbox {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .difficulty {
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        .easy { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+        .medium { background: rgba(234, 179, 8, 0.2); color: #fde047; }
+        .hard { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+        
+        .problem-link {
+            color: var(--text-main);
+            text-decoration: none;
+        }
+        .problem-link:hover {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">PrepPortal</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Job Portal</a></li>
+                <li><a href="prep.html">Preparation</a></li>
+                <li><a href="companies.html">Companies</a></li>
+                <li><a href="dsa-sheet.html">DSA Sheet</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+    </nav>
+
+    <div class="container sheet-container">
+        <h1>Ultimate DSA Mastery Sheet</h1>
+        <p style="color: var(--text-dim); margin-bottom: 30px;">Curated list of 180+ problems to master Data Structures & Algorithms.</p>
+
+        <div class="progress-section glass">
+            <span>Your Progress</span>
+            <div class="progress-bar-bg">
+                <div id="progressFill" class="progress-bar-fill"></div>
+            </div>
+            <span id="progressText">0 / 185 Solved</span>
+        </div>
+
+        <!-- Topic: Arrays -->
+        <div class="topic-section">
+            <div class="topic-title">
+                <i class="fas fa-layer-group" style="color: var(--primary)"></i>
+                <h2>Arrays & Hashing</h2>
+            </div>
+            <div class="glass" style="padding: 10px;">
+                <table class="problem-table">
+                    <thead>
+                        <tr>
+                            <th width="50">Solved</th>
+                            <th>Problem</th>
+                            <th width="100">Difficulty</th>
+                            <th width="120">Platform</th>
+                        </tr>
+                    </thead>
+                    <tbody id="arrayProblems">
+                        <tr>
+                            <td><input type="checkbox" class="status-checkbox" data-id="1"></td>
+                            <td><a href="#" class="problem-link">Two Sum</a></td>
+                            <td><span class="difficulty easy">Easy</span></td>
+                            <td>LeetCode</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="status-checkbox" data-id="2"></td>
+                            <td><a href="#" class="problem-link">Best Time to Buy and Sell Stock</a></td>
+                            <td><span class="difficulty easy">Easy</span></td>
+                            <td>LeetCode</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="status-checkbox" data-id="3"></td>
+                            <td><a href="#" class="problem-link">Product of Array Except Self</a></td>
+                            <td><span class="difficulty medium">Medium</span></td>
+                            <td>LeetCode</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="status-checkbox" data-id="4"></td>
+                            <td><a href="#" class="problem-link">Longest Consecutive Sequence</a></td>
+                            <td><span class="difficulty medium">Medium</span></td>
+                            <td>LeetCode</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Topic: Linked List -->
+        <div class="topic-section">
+            <div class="topic-title">
+                <i class="fas fa-link" style="color: var(--primary)"></i>
+                <h2>Linked List</h2>
+            </div>
+            <div class="glass" style="padding: 10px;">
+                <table class="problem-table">
+                    <thead>
+                        <tr>
+                            <th width="50">Solved</th>
+                            <th>Problem</th>
+                            <th width="100">Difficulty</th>
+                            <th width="120">Platform</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" class="status-checkbox" data-id="5"></td>
+                            <td><a href="#" class="problem-link">Reverse Linked List</a></td>
+                            <td><span class="difficulty easy">Easy</span></td>
+                            <td>LeetCode</td>
+                        </tr>
+                         <tr>
+                            <td><input type="checkbox" class="status-checkbox" data-id="6"></td>
+                            <td><a href="#" class="problem-link">Merge Two Sorted Lists</a></td>
+                            <td><span class="difficulty easy">Easy</span></td>
+                            <td>LeetCode</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Progress Tracking Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkboxes = document.querySelectorAll('.status-checkbox');
+            const total = checkboxes.length;
+            
+            const updateUI = () => {
+                const checked = document.querySelectorAll('.status-checkbox:checked').length;
+                const percentage = (checked / total) * 100;
+                document.getElementById('progressFill').style.width = percentage + '%';
+                document.getElementById('progressText').innerText = `${checked} / ${total} Solved`;
+            };
+
+            // Load saved state
+            checkboxes.forEach(cb => {
+                const id = cb.getAttribute('data-id');
+                if (localStorage.getItem('dsa_prob_' + id) === 'true') {
+                    cb.checked = true;
+                }
+                
+                cb.addEventListener('change', () => {
+                    localStorage.setItem('dsa_prob_' + id, cb.checked);
+                    updateUI();
+                });
+            });
+
+            updateUI();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preparation | PrepPortal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .prep-header {
+            margin-top: 100px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .prep-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        .prep-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .icon-box {
+            min-width: 60px;
+            height: 60px;
+            background: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+        .prep-content h3 {
+            margin-bottom: 10px;
+        }
+        .prep-links {
+            margin-top: 15px;
+            display: flex;
+            gap: 15px;
+        }
+        .prep-link {
+            font-size: 0.9rem;
+            color: var(--accent);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .prep-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .prep-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">PrepPortal</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Job Portal</a></li>
+                <li><a href="prep.html">Preparation</a></li>
+                <li><a href="companies.html">Companies</a></li>
+                <li><a href="dsa-sheet.html">DSA Sheet</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="prep-header">
+            <h1>Preparation Hub</h1>
+            <p style="color: var(--text-dim);">Deep dive into every round of the interview process.</p>
+        </div>
+
+        <div class="prep-grid">
+            <!-- Aptitude -->
+            <div class="card glass prep-item">
+                <div class="icon-box"><i class="fas fa-calculator"></i></div>
+                <div class="prep-content">
+                    <h3>Quantitative Aptitude</h3>
+                    <p>Master Numbers, Time & Work, Speed, Distance, and Logical Reasoning with shortcuts and formulas.</p>
+                    <div class="prep-links">
+                        <a href="notes-aptitude.html" class="prep-link"><i class="fas fa-file-lines"></i> View Notes</a>
+                        <a href="practice-aptitude.html" class="prep-link"><i class="fas fa-pen-to-square"></i> Practice Problems</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DSA -->
+            <div class="card glass prep-item">
+                <div class="icon-box" style="background: var(--secondary);"><i class="fas fa-code-branch"></i></div>
+                <div class="prep-content">
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>From Arrays to Dynamic Programming. Learn the underlying logic and patterns to solve complex problems.</p>
+                    <div class="prep-links">
+                        <a href="notes-dsa.html" class="prep-link"><i class="fas fa-file-lines"></i> View Notes</a>
+                        <a href="dsa-sheet.html" class="prep-link"><i class="fas fa-list-check"></i> Standard Sheet</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical -->
+            <div class="card glass prep-item">
+                <div class="icon-box" style="background: var(--accent);"><i class="fas fa-microchip"></i></div>
+                <div class="prep-content">
+                    <h3>Technical Concepts</h3>
+                    <p>OS, DBMS, Networking, and OOPs. Core computer science subjects essential for every developer interview.</p>
+                    <div class="prep-links">
+                        <a href="notes-technical.html" class="prep-link"><i class="fas fa-file-lines"></i> View Notes</a>
+                        <a href="practice-technical.html" class="prep-link"><i class="fas fa-pen-to-square"></i> Practice MCQ</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HR -->
+            <div class="card glass prep-item">
+                <div class="icon-box" style="background: #f43f5e;"><i class="fas fa-user-tie"></i></div>
+                <div class="prep-content">
+                    <h3>HR & Soft Skills</h3>
+                    <p>Master behavioral questions, body language, and communication. Learn to tell your story effectively.</p>
+                    <div class="prep-links">
+                        <a href="notes-hr.html" class="prep-link"><i class="fas fa-file-lines"></i> Sample Answers</a>
+                        <a href="tips-hr.html" class="prep-link"><i class="fas fa-lightbulb"></i> Pro Tips</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

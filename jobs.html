@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs | PrepPortal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .search-container {
+            margin-top: 100px;
+            margin-bottom: 40px;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 15px 25px;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            color: white;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">PrepPortal</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Job Portal</a></li>
+                <li><a href="prep.html">Preparation</a></li>
+                <li><a href="companies.html">Companies</a></li>
+                <li><a href="dsa-sheet.html">DSA Sheet</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="search-container">
+            <h1>Active Career Opportunities</h1>
+            <p style="color: var(--text-dim); margin-bottom: 20px;">Find your next big break from over 500+ daily listings.</p>
+            <input type="text" class="search-bar glass" placeholder="Search roles, companies, or skills...">
+        </div>
+
+        <div class="grid">
+            <!-- Job Card 1 -->
+            <div class="card glass job-card">
+                <div>
+                    <span class="tag">Full Time</span> <span class="tag">Remote</span>
+                    <h3>Senior Frontend Developer</h3>
+                    <p>Google • Mountain View, CA</p>
+                    <p style="font-size: 0.9rem;">Join the core Search team to build the next generation of web interfaces using React and Next.js.</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-weight: bold; color: var(--accent);">$140k - 180k</span>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Job Card 2 -->
+            <div class="card glass job-card">
+                <div>
+                    <span class="tag">Full Time</span> <span class="tag">On-site</span>
+                    <h3>SDE-1 (Java)</h3>
+                    <p>Amazon • Bangalore, India</p>
+                    <p style="font-size: 0.9rem;">Looking for strong problem solvers with expertise in Java, AWS, and Distributed Systems.</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-weight: bold; color: var(--accent);">₹18L - 25L</span>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Job Card 3 -->
+            <div class="card glass job-card">
+                <div>
+                    <span class="tag">Internship</span> <span class="tag">Remote</span>
+                    <h3>Data Science Intern</h3>
+                    <p>Meta • Menlo Park, CA</p>
+                    <p style="font-size: 0.9rem;">Analyze user behavior data to drive product decisions. Python and SQL skills required.</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-weight: bold; color: var(--accent);">$45 / hr</span>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Job Card 4 -->
+            <div class="card glass job-card">
+                <div>
+                    <span class="tag">Full Time</span> <span class="tag">Hybrid</span>
+                    <h3>DevOps Engineer</h3>
+                    <p>Netflix • Los Gatos, CA</p>
+                    <p style="font-size: 0.9rem;">Manage large scale infrastructure using Kubernetes and Terraform.</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-weight: bold; color: var(--accent);">$160k - 200k</span>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+            
+             <!-- Job Card 5 -->
+             <div class="card glass job-card">
+                <div>
+                    <span class="tag">Full Time</span> <span class="tag">On-site</span>
+                    <h3>Systems Architect</h3>
+                    <p>Microsoft • Hyderabad, India</p>
+                    <p style="font-size: 0.9rem;">Design scalable cloud solutions for Azure enterprise customers.</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-weight: bold; color: var(--accent);">₹35L - 50L</span>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

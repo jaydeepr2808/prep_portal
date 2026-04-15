@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Notes | PrepPortal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .notes-container {
+            margin-top: 100px;
+        }
+        .note-card {
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .formula-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+            font-family: monospace;
+            margin: 15px 0;
+            color: var(--accent);
+        }
+        .example-box {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-dim);
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">PrepPortal</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Job Portal</a></li>
+                <li><a href="prep.html">Preparation</a></li>
+                <li><a href="companies.html">Companies</a></li>
+                <li><a href="dsa-sheet.html">DSA Sheet</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container notes-container">
+        <a href="prep.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Hub</a>
+        <h1>Quantitative Aptitude: Time & Work</h1>
+        <p style="color: var(--text-dim);">Master one of the most frequent topics in aptitude tests.</p>
+
+        <section class="note-card glass" style="margin-top: 40px;">
+            <h3>Key Concepts</h3>
+            <p>Work done is usually considered as 1 unit. If a person can do a piece of work in 'n' days, then that person's 1 day's work = 1/n.</p>
+            
+            <div class="formula-box">
+                Work Done = Time Taken × Rate of Work
+            </div>
+
+            <h3>Important Formulas</h3>
+            <ul>
+                <li><strong>Efficiency:</strong> If A is twice as good a workman as B, then the ratio of work done by A and B is 2:1.</li>
+                <li><strong>Shared Work:</strong> If A can do work in 'a' days and B in 'b' days, then together they can do it in 1 / (1/a + 1/b) = (ab) / (a+b) days.</li>
+            </ul>
+
+            <div class="example-box">
+                <strong>Example:</strong> A can do a work in 15 days and B in 20 days. If they work on it together for 4 days, then the fraction of the work that is left is: <br><br>
+                A's 1 day's work = 1/15; <br>
+                B's 1 day's work = 1/20; <br>
+                (A + B)'s 1 day's work = (1/15 + 1/20) = 7/60. <br>
+                (A + B)'s 4 day's work = (7/60 * 4) = 7/15. <br>
+                Therefore, work left = (1 - 7/15) = 8/15.
+            </div>
+        </section>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="practice-aptitude.html" class="btn btn-primary">Try Practice Problems</a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

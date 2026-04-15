@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies | PrepPortal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .company-header {
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+        .company-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .company-item {
+            padding: 25px;
+            display: grid;
+            grid-template-columns: 80px 1fr auto;
+            align-items: center;
+            gap: 20px;
+        }
+        .company-logo-placeholder {
+            width: 60px;
+            height: 60px;
+            background: var(--bg-card);
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        .rounds-badges {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        .round-badge {
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">PrepPortal</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Job Portal</a></li>
+                <li><a href="prep.html">Preparation</a></li>
+                <li><a href="companies.html">Companies</a></li>
+                <li><a href="dsa-sheet.html">DSA Sheet</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="company-header">
+            <h1>Company Hiring Patterns</h1>
+            <p style="color: var(--text-dim);">Detailed breakdown of requirements and process for top recruiters.</p>
+        </div>
+
+        <div class="company-list">
+            <!-- Amazon -->
+            <div class="card glass company-item">
+                <div class="company-logo-placeholder">AMZ</div>
+                <div>
+                    <h3>Amazon</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-dim);">Focus: Leadership Principles, Scalability, DSA</p>
+                    <div class="rounds-badges">
+                        <span class="round-badge">Online Assessment</span>
+                        <span class="round-badge">Coding Round</span>
+                        <span class="round-badge">Low-Level Design</span>
+                        <span class="round-badge">Bar Raiser</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline">Full Syllabus</a>
+            </div>
+
+            <!-- Google -->
+            <div class="card glass company-item">
+                <div class="company-logo-placeholder">GGL</div>
+                <div>
+                    <h3>Google</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-dim);">Focus: Algorithmic Efficiency, "Googlyness", Open-ended problems</p>
+                    <div class="rounds-badges">
+                        <span class="round-badge">Phone Screen</span>
+                        <span class="round-badge">Onsite Coding (3-4)</span>
+                        <span class="round-badge">Behavioral</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline">Full Syllabus</a>
+            </div>
+
+            <!-- Microsoft -->
+            <div class="card glass company-item">
+                <div class="company-logo-placeholder">MSFT</div>
+                <div>
+                    <h3>Microsoft</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-dim);">Focus: Problem Solving, Data Structures, Collaborative spirit</p>
+                    <div class="rounds-badges">
+                        <span class="round-badge">Online Test</span>
+                        <span class="round-badge">Technical Rounds</span>
+                        <span class="round-badge">AA Round</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline">Full Syllabus</a>
+            </div>
+
+            <!-- TCS -->
+            <div class="card glass company-item">
+                <div class="company-logo-placeholder">TCS</div>
+                <div>
+                    <h3>TCS (NQT/Ninja/Digital)</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-dim);">Focus: Aptitude, Basic Coding, Verbal Ability</p>
+                    <div class="rounds-badges">
+                        <span class="round-badge">NQT Exam</span>
+                        <span class="round-badge">Technical Interview</span>
+                        <span class="round-badge">HR Interview</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-outline">Full Syllabus</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
